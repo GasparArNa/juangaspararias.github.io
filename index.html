@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <met name="description" content="Welcome! I am a pre-doctoral fellow at Princeton's Research Program in Development Economics. I hold a B.A. and M.A. in Economics from the Universidad de la Republica, Uruguay.">
+    <title>Juan Gaspar Arias</title>
+    <style>
+      .profile {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 20px;
+  object-fit: cover;
+  border: 2px solid #1e3a5f;  /* Add this - 2px black border */
+}
+
+
+      .image-container {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Ensures the images are spaced out evenly */
+  gap: 100px; /* Optional: Adds space between the images */
+  padding: 0 10px; /* Optional: Adds some padding around the container */
+  align-items: center;
+}
+
+/* Individual image styles */
+.fencing {
+  width: 48%; /* Each image takes up 48% of the container */
+  height: 600px; /* Fixed height for the images */
+  width: 800px;
+  border-radius: 10px; /* Rounded corners for the images */
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+.header-name {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 30px;
+  z-index: 1001;  /* Add this - higher than frieze's z-index */
+}
+
+.buttonsz {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding-right: 80px;
+  padding-top: 30px;
+  z-index: 1001;  /* Add this - higher than frieze's z-index */
+}
+
+.header-name h2 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: #003366;  /* Changed to white for visibility */
+  font-size: 20px;
+}
+    button a {
+  text-decoration: none;  /* Removes underline */
+        color: #003366;  /* Same color as button text */
+    }
+    button a:visited {
+        color: #003366;  /* Keeps same color after clicking */
+    }
+
+      button {
+        background-color: #a7ccd9;
+        color:#003366;
+        border-color:  #003366;
+        border-style: solid;
+        border-width: 3px;
+        height: 26px;
+        width: 90px;
+        border-radius: 2px;
+        font-weight: bold;
+        font-family: 'Merriweather', Georgia, serif;
+        margin-left: 8px;
+      }
+
+      .username {
+        font-weight: bold;
+      }
+
+      .intro-par {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .contact-par {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+      .position-sec {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 20px;
+      }
+
+      .res-sec {
+  margin-top: 130px;
+  margin-bottom: 0;
+  font-size: 25px;
+  clear: left;  /* Add this line */
+}
+
+      .teach-sec {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 25px;
+      }
+
+      .pers-sec {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 25px;
+      }
+
+      .name-sec {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 30px;
+      }
+
+      .res-par{
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+
+
+      .cv-line {
+  display: block;
+  margin-top: 8px; 
+      }
+
+        em {
+        color: blue;
+        font-style: normal;
+      }
+
+      .frieze {
+    position: fixed;  /* or 'absolute' if you want it to scroll with the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #a7ccd9;
+    z-index: 1000;  /* ensures it stays on top */
+}
+
+a {
+  text-decoration: none;  /* Removes underline */
+  color: #0066cc;  /* Navy blue color */
+  font-weight: bold;  /* Makes them bold */
+}
+
+a:visited {
+  color: #0066cc;  /* Keeps same navy blue after clicking */
+}
+
+a:hover {
+  color: #0066cc;  /* Keeps same color on hover (optional) */
+}
+
+a:active {
+  color: #0066cc;  /* Keeps same color while clicking */
+}
+
+h1, h2, h3 {
+  color: #1e3a5f;  /* Darker slate blue for headings */
+}
+
+/* Logos */
+.logos {
+  position: absolute;
+  top: 100px;  /* Adjust if needed to align perfectly with h1 */
+  right: 80px;
+  z-index: 100;
+  display: flex;
+  gap: 15px;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+}
+
+
+body {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 100px;  /* increased to account for the frieze */
+    margin: 0;  /* add this to remove default body margin */
+    padding-bottom: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    </style>
+  </head>
+  <body>
+    
+    <div class="frieze"></div>
+    
+    <div class="header-name">
+        <h2>Juan Gaspar Arias - Princeton University</h2>
+    </div>
+
+    <div class="buttonsz">
+    <button><a href="#research-sec">Research</a></button> <button><a href="#teaching-sec">Teaching</a></button> <button><a href="#personal-sec">Personal</a></button>
+    </div>
+
+    <div class="logos">
+  <img src="images/udelar.jpg" alt="Logo 1" class="logo-img" />
+  <img src="images/princeton.jpg" alt="Logo 2" class="logo-img" />
+</div>
+    
+    <img src="images/portrait.jpg" alt="profile_picture" class="profile" />
+
+    <h1 class="name-sec">Juan Gaspar Arias</h1>
+
+    <h2 class="position-sec">Pre-doctoral Fellow, Princeton University</h2>
+
+    <p class="intro-par"> Welcome! I am currently a pre-doctoral fellow at Princeton Univeristy's <a href="https://rpde.princeton.edu/" target="_blank">Research Program in Development Economics</a>. I hold a B.A. and M.A. in Economics from the Universidad de la República (UdelaR), Uruguay. I also count with studies in Political Science from the same institution. Previously, I was a research assistant for the <a href="https://upperesearch.org/" target="_blank">United Programs for Political Economy Research</a> and the <a href="https://iecon.fcea.udelar.edu.uy/en/" target="_blank">Economics Department</a>  at the UdelaR. My research interests are Political Economy and Development Economics. <br> <span class ="cv-line"> You can find my cv <strong><a href="../pdfs/CV_JGA.pdf" target="_blank">here.</a></strong></p>
+
+    <h3 class="position-sec">Contact Info:</h3>
+    
+    <p class="contact-par"> Department of Economics, Princeton University <br> 120 Julis Romo Rabinowitz, Princeton, NJ <br> Email Me at: <a href="mailto:ja7375@princeton.edu">ja7375@princeton.edu</a></p>
+
+    <h2 id="research-sec" class="res-sec">Research</h2>
+    
+    <p class="res-par"> <i><a href="../pdfs/int_mov_ccss_JGA.pdf" target="_blank">Intergenerational spillovers of Collective Wage Bargaining: a case study for Uruguay.</a> <br> May 2025 <br> Master's Thesis - Directed by <a href="https://iecon.fcea.udelar.edu.uy/en/integrantes/docentes/item/leites-martin.html">Martín Leites</a> and <a href="https://iecon.fcea.udelar.edu.uy/en/members/faculty/item/vila-joan.html">Joan Vila</a> </i> <br><br> The Effect of Teacher Abuse on Educational Outcomes: Evidence from Peru. <i>Joint with <a href="https://www.micaelasviatschi.com/">Maria Micaela Sviatschi</a> and <a href="https://sites.google.com/umn.edu/nataliaguerrerotrinidad">Natalia Guerrero</a>. In progress.</i></p>
+    
+    <h2 id="teaching-sec" class="teach-sec">Teaching</h2>
+    
+    <p class="res-par"><a href="https://www.fcea.udelar.edu.uy/images/micrositios/bedelia/fichas_UC/2025/E60_2025_02_Econom%C3%ADa_del_Uruguay.pdf" target="_blank">The Economy of Uruguay</a> - <i>Facultad de Ciencias Económicas y de Administración - Universidad de la República.</i> Fall 2023.</p>
+    
+    <h2 id="personal-sec" class="pers-sec">Personal</h2>
+    <p class="res-par"> Outside of academia, I was a competitive fencer from 2016 until 2022. I represented Uruguay internationally at junior and senior levels. I've won (but also lost) tournaments at the national level. Nowadays I enjoy fencing only recreationally. </p>
+    
+    <div class="image-container">
+    <img src="images/fencing.jpg" alt="fencing_picture" class="fencing" />
+    <img src="images/fencing2.jpg" alt="fencing_picture2" class="fencing" />
+  </div>
+
+  </body>
+</html>
+
