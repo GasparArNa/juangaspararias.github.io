@@ -198,21 +198,7 @@ h1, h2, h3 {
 
 @media (max-width: 1200px) {
   .logos {
-    display: none;  /* Hides logos on screens smaller than 768px */
-  }
-
-/* Add these button styles for mobile */
-  .buttonsz {
-    padding-right: 10px;  /* Less padding on small screens */
-    padding-top: 10px;
-  }
-  
-  button {
-    height: 22px;  /* Smaller height */
-    width: 70px;   /* Smaller width */
-    font-size: 11px;  /* Smaller font */
-    margin-left: 4px;  /* Less spacing between buttons */
-    border-width: 2px;  /* Thinner border */
+    display: none;
   }
   
   .header-name {
@@ -221,11 +207,40 @@ h1, h2, h3 {
   }
   
   .header-name h2 {
-    font-size: 14px;  /* Smaller header text */
+    font-size: 14px;
   }
-    
+  
+  /* Move buttons below header name on left side */
+  .buttonsz {
+    position: fixed;
+    top: 50px;  /* Below the header name */
+    left: 0;  /* Align to left instead of right */
+    right: auto;  /* Remove right positioning */
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  
+  button {
+    height: 22px;
+    width: 70px;
+    font-size: 11px;
+    margin-left: 4px;
+    border-width: 2px;
+  }
+  
+  /* Fencing images */
+  .image-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .fencing {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
 }
-
 
 body {
     padding-left: 48px;
