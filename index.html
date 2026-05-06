@@ -7,6 +7,9 @@
     <met name="description" content="Welcome! I am a pre-doctoral fellow at Princeton's Research Program in Development Economics. I hold a B.A. and M.A. in Economics from the Universidad de la Republica, Uruguay.">
     <title>Juan Gaspar Arias</title>
     <style>
+        :root {
+  --nyu-violet: #57068C;
+}
       .profile {
   width: 300px;
   height: 400px;
@@ -16,7 +19,6 @@
   object-fit: cover;
   border: 2px solid #1e3a5f;  /* Add this - 2px black border */
 }
-
 
       .image-container {
   display: flex; /* Enables flexbox layout */
@@ -60,20 +62,20 @@
   font-weight: normal;
   margin: 0;
   padding: 0;
-  color: #003366;  /* Changed to white for visibility */
+  color: var(--nyu-violet)  /* Changed to white for visibility */
   font-size: 20px;
 }
     button a {
   text-decoration: none;  /* Removes underline */
-        color: #003366;  /* Same color as button text */
+        color: var(--nyu-violet);  /* Same color as button text */
     }
     button a:visited {
-        color: #003366;  /* Keeps same color after clicking */
+        color: var(--nyu-violet);  /* Keeps same color after clicking */
     }
 
       button {
         background-color: #a7ccd9;
-        color:#003366;
+        color:var(--nyu-violet);
         border-color:  #003366;
         border-style: solid;
         border-width: 3px;
@@ -161,24 +163,24 @@
 
 a {
   text-decoration: none;  /* Removes underline */
-  color: #0066cc;  /* Navy blue color */
+  color: var(--nyu-violet);  /* Navy blue color */
   font-weight: bold;  /* Makes them bold */
 }
 
 a:visited {
-  color: #0066cc;  /* Keeps same navy blue after clicking */
+  color: var(--nyu-violet);  /* Keeps same navy blue after clicking */
 }
 
 a:hover {
-  color: #0066cc;  /* Keeps same color on hover (optional) */
+  color: var(--nyu-violet);  /* Keeps same color on hover (optional) */
 }
 
 a:active {
-  color: #0066cc;  /* Keeps same color while clicking */
+  color: var(--nyu-violet);  /* Keeps same color while clicking */
 }
 
 h1, h2, h3 {
-  color: #1e3a5f;  /* Darker slate blue for headings */
+  color: var(--nyu-violet);  /* Darker slate blue for headings */
 }
 
 /* Logos */
